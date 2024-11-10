@@ -19,6 +19,11 @@ form.addEventListener('submit', function (e) {
     }
     // resume display on generate time
     var display = resumeDisplay.style.display = 'block';
+    // working on reset
+    var reset = document.getElementById('reset');
+    reset === null || reset === void 0 ? void 0 : reset.addEventListener('click', function () {
+        form.reset();
+    });
     // working on pdf
     var pdf = document.getElementById('btn-pdf');
     pdf.addEventListener('click', function () {

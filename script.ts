@@ -40,13 +40,19 @@ form.addEventListener('submit', function (e) {
         console.error('some fields are missing');
     }
     
+
     // resume display on generate time
-    
     let display = resumeDisplay.style.display= 'block';
+
+
+    // working on reset
+    let reset =document.getElementById('reset');
+    reset?.addEventListener('click', function(){
+        form.reset();
+    })
     
     
     // working on pdf
-
     let pdf= document.getElementById('btn-pdf') as HTMLButtonElement
     pdf.addEventListener('click', function(){
         window.print();

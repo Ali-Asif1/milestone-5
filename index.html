@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume milestons-5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>Resume</header>
+      <form id="form" autocomplete="off">
+        <div class="primary-heading">
+          <span>Personal Information</span>
+        </div>
+        <div class="personal-box">
+          <div class="input-box">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" placeholder="Enter Here" required />
+            <label for="phone">Contact</label>
+            <input type="tel" id="phone" placeholder="Enter Here" required />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Here" required />
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required />
+          </div>
+        </div>
+        <div class="text-box text">
+          <label for="adrs">Address</label>
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="2"
+            placeholder="Enter Here"
+            required
+          ></textarea>
+        </div>
+        <div class="line"></div>
+        <div class="text-box">
+          <div class="primary-heading">
+            <span>Education Information</span>
+          </div>
+          <textarea
+            name="education"
+            id="education"
+            cols="30"
+            rows="4"
+            placeholder="Enter Here"
+            required
+          ></textarea>
+        </div>
+        <div class="line"></div>
+        <div class="text-box">
+          <div class="primary-heading">
+            <span>Professional Information</span>
+          </div>
+          <textarea
+            name="experience"
+            id="experience"
+            cols="30"
+            rows="4"
+            placeholder="Enter Here"
+            required
+          ></textarea>
+        </div>
+        <div class="line"></div>
+        <div class="text-box">
+          <div class="primary-heading">
+            <span>Skills</span>
+          </div>
+          <textarea
+            name="skills"
+            id="skills"
+            cols="30"
+            rows="4"
+            placeholder="Enter Here"
+            required
+          ></textarea>
+        </div>
+        <div class="btn-box">
+          <button type="submit" id="submit">Generate Resume</button>
+          <!-- <div class="btn">
+            <label for="photo">Upload Photo</label>
+            <input type="file" name="" id="photo" />
+          </div> -->
+        </div>
+      </form>
+    </div>
+
+    <!-- <div>Showing Resume</div> -->
+
+    <div id="resume" class="resume"></div>
+    <div class="pdf-box">
+      <button class="btn-pdf" id="btn-pdf">download PDF</button>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

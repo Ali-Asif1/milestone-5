@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+  margin: 20px;
+  font-size: 1rem;
+}
+.container {
+  width: 100%;
+  min-height: 100%;
+}
+.container form {
+  background: linear-gradient(
+    to top,
+    rgb(211, 207, 207),
+    rgb(153, 152, 152),
+    rgba(187, 67, 67, 0.986)
+  );
+  max-width: 600px;
+  margin-inline: auto;
+  padding: 20px;
+  border-bottom: 2px solid rgb(173, 173, 173);
+  border-radius: 8px;
+  box-shadow: 5px 12px 25px rgba(0, 0, 0, 0.35);
+}
+.container header {
+  color: rgba(187, 67, 67, 0.986);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.primary-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-block: 8px;
+}
+.personal-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  width: 100%;
+}
+.personal-box .input-box {
+  margin-left: 8px;
+}
+
+.input-box label {
+  font-weight: 500;
+  width: 100%;
+  margin-left: 4px;
+}
+.input-box input {
+  background-color: #e7e5e5;
+  width: 100%;
+  color: #333;
+  margin: 4px 2px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+::placeholder {
+  font-family: monospace, sans-serif;
+  font-size: 12px;
+}
+.input-box input[type="date"]:valid {
+  color: #333;
+}
+.input-box input[type="date"] {
+  color: rgb(136, 135, 135);
+}
+
+.text {
+  margin-left: 8px;
+}
+.text label {
+  margin-left: 4px;
+}
+
+.text label {
+  display: block;
+  margin-bottom: 4px;
+}
+.text-box textarea {
+  width: calc(100% - 1px);
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #e7e5e5;
+}
+.line {
+  border-bottom: 2px solid rgba(187, 67, 67, 0.986);
+  margin: 0.6rem auto;
+  width: 85%;
+  border-radius: 8px;
+}
+.btn-box {
+  width: 100%;
+  /* display:grid;
+    grid-template-columns: 1fr 1fr; */
+  margin-top: 1rem;
+  /* gap: 1rem; */
+}
+/* .btn{
+    width: 100%;
+    background-color: rgba(187, 67, 67, 0.986);
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+} */
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: rgba(187, 67, 67, 0.986);
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+}
+/* .btn input[type="file"]{
+    display:none;
+}
+.btn label{
+    background-color: rgba(187, 67, 67, 0.986);
+    width: 100%;
+    padding: 8px 12%;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+} */
+#newName {
+  color: black;
+  background-color: blue;
+  padding: 20px;
+}
+
+@media (max-width: 380px) {
+  .btn-box {
+    grid-template-columns: 1fr;
+  }
+  .btn {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .personal-box {
+    grid-template-columns: 1fr;
+  }
+  .container header {
+    font-size: 1.8rem;
+  }
+  .primary-heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .btn label,
+  button {
+    font-size: 12px;
+  }
+}
+
+/* styling on showing resume diplay  */
+
+.resume {
+  display: none;
+  font-family: poppins, sans-serif;
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(320deg,
+      rgba(187, 67, 67, 0.986), rgb(211, 207, 207),
+      rgb(153, 152, 152));
+      box-shadow: 5px 12px 25px rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  margin-top: 3rem;
+  margin-inline: auto;
+  outline: none;
+  border: 1px solid rgb(140, 140, 145);
+  border-radius: 8px;
+}
+.resume h1{
+  color: rgba(187, 67, 67, 0.986);
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 5px 10px 15px rgb(155, 152, 152);
+}
+.resume h3{
+  color: rgb(36, 36, 36);
+  font-weight: 600;
+  width: 100%;
+  margin:8px 0px;
+}
+.resume p{
+  margin-left: 8px;
+  outline: none;
+}
+.resume p b{
+  color:rgb(46, 46, 46);
+  margin-right: 20px;
+  width: 100%;
+  outline: none;
+}
+p span{
+  outline: none;
+}
+
+.pdf-box{
+  width: 100%;
+  display: flex;
+  justify-content:center ;
+}
+.pdf-box button{
+  width: fit-content;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+/* .pdf-box button:hover{
+  transform: scale(0.94);
+} */

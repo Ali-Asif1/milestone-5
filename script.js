@@ -17,8 +17,6 @@ form.addEventListener('submit', function (e) {
     else {
         console.error('some fields are missing');
     }
-    // resume display on generate time
-    var display = resumeDisplay.style.display = 'block';
     // working on reset
     var reset = document.getElementById('reset');
     reset === null || reset === void 0 ? void 0 : reset.addEventListener('click', function () {
@@ -29,4 +27,7 @@ form.addEventListener('submit', function (e) {
     pdf.addEventListener('click', function () {
         window.print();
     });
+    // display on generate time
+    var display = resumeDisplay.style.display = 'block';
+    var pdfdisplay = pdf.style.display = 'block';
 });

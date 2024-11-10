@@ -229,6 +229,6 @@ p span{
   margin-top: 20px;
   transition: transform 0.3s;
 }
-/* .pdf-box button:hover{
-  transform: scale(0.94);
-} */
+.btn-pdf{
+  display: none;
+}

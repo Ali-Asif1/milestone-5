@@ -41,10 +41,8 @@ form.addEventListener('submit', function (e) {
     }
     
 
-    // resume display on generate time
-    let display = resumeDisplay.style.display= 'block';
-
-
+    
+    
     // working on reset
     let reset =document.getElementById('reset');
     reset?.addEventListener('click', function(){
@@ -58,5 +56,8 @@ form.addEventListener('submit', function (e) {
         window.print();
     })
     
+    // display on generate time
+    let display = resumeDisplay.style.display= 'block';
+    let pdfdisplay =pdf.style.display= 'block';
     
 })

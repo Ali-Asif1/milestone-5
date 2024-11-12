@@ -16,9 +16,9 @@
         <div class="personal-box">
           <div class="input-box">
             <label for="fname">Full Name</label>
-            <input type="text" id="fname" placeholder="Enter Here" required />
+            <input type="text" id="fname" placeholder="Enter Here" required maxlength="25"/>
             <label for="phone">Contact</label>
-            <input type="tel" id="phone" placeholder="Enter Here" required />
+            <input type="tel" id="phone" placeholder="03xx-xxxxxxx" required pattern="[0-9]{4}-[0-9]{7}"/>
           </div>
           <div class="input-box">
             <label for="email">Email</label>
@@ -83,10 +83,6 @@
         <div class="btn-box">
           <button type="submit" id="submit">Generate Resume</button>
           <button type="reset" id="reset">Reset</button>
-          <!-- <div class="btn">
-            <label for="photo">Upload Photo</label>
-            <input type="file" name="" id="photo" />
-          </div> -->
         </div>
       </form>
     </div>

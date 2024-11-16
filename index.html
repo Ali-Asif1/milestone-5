@@ -16,9 +16,9 @@
         <div class="personal-box">
           <div class="input-box">
             <label for="fname">Full Name</label>
-            <input type="text" id="fname" placeholder="Enter Here" required maxlength="25"/>
+            <input type="text" id="fname" placeholder="Enter Here" maxlength="35" required />
             <label for="phone">Contact</label>
-            <input type="tel" id="phone" placeholder="03xx-xxxxxxx" required pattern="[0-9]{4}-[0-9]{7}"/>
+            <input type="tel" id="phone" placeholder="03xx-xxxxxxx" pattern="[0-9]{4}-[0-9]{7}" required />
           </div>
           <div class="input-box">
             <label for="email">Email</label>
@@ -37,6 +37,7 @@
             placeholder="Enter Here"
             required
           ></textarea>
+          <input type="file" id="image" class="image" accept="image/*" />
         </div>
         <div class="line"></div>
         <div class="text-box">
@@ -87,14 +88,14 @@
       </form>
     </div>
 
-    <!-- <div>Showing Resume</div> -->
+    
+    <!-- working on Display Resume -->
 
     <div id="resume" class="resume"></div>
+
     <div class="pdf-box">
       <button class="btn-pdf" id="btn-pdf">download PDF</button>
-      
     </div>
-
 
     <script src="script.js"></script>
   </body>
